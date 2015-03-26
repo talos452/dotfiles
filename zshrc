@@ -62,4 +62,8 @@ if [ `id -un` != root ]
    source ~/.keychain/`hostname`-sh
 fi
 
+if [ -x /usr/bin/dircolors ]; then
+   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
 alias statmk="make SHARED=0 CC='gcc -static'"
