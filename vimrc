@@ -8,3 +8,6 @@ set t_Co=256
 
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 0
+
+let g:bufferline_echo=0
+
