@@ -13,7 +13,7 @@ NeoBundle 'Shougo/neosnippet.vim'			" this stuff
 NeoBundle 'Shougo/neosnippet-snippets'			" came with
 NeoBundle 'tpope/vim-fugitive'				" neobundle
 NeoBundle 'ctrlpvim/ctrlp.vim'				" what does
-NeoBundle 'flazz/vim-colorschees'			" it all do? 
+NeoBundle 'flazz/vim-colorschemes'			" it all do? 
 
 NeoBundle 'scrooloose/nerdtree'				" file browser
 NeoBundle 'bling/vim-airline'				" airline
@@ -33,5 +33,5 @@ set background=dark
 colorscheme solarized
 set t_Co=256
 syntax on
-let g:airline_theme='solarized'
-let g:airline_powerline_fonts = 0
+let g:airline_theme='solarized'	
+let g:airline_powerline_fonts = 0 " TODO: patch font	
