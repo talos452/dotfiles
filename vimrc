@@ -3,43 +3,30 @@ if has('vim_starting')
   if &compatible
     set nocompatible               " Be iMproved
   endif
-
-  " Required:
-  set runtimepath+=/home/jkl/.vim/bundle/neobundle.vim/
+  set runtimepath+=/home/jkl/.vim/bundle/neobundle.vim/ " required
 endif
+call neobundle#begin(expand('/home/jkl/.vim/bundle'))	" required
+NeoBundleFetch 'Shougo/neobundle.vim'			" required
 
-" Required:
-call neobundle#begin(expand('/home/jkl/.vim/bundle'))
+" BUNDLES
+NeoBundle 'Shougo/neosnippet.vim'			" this stuff
+NeoBundle 'Shougo/neosnippet-snippets'			" came with
+NeoBundle 'tpope/vim-fugitive'				" neobundle
+NeoBundle 'ctrlpvim/ctrlp.vim'				" what does
+NeoBundle 'flazz/vim-colorschees'			" it all do? 
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'		" required
+NeoBundle 'scrooloose/nerdtree'				" file browser
+NeoBundle 'bling/vim-airline'				" airline
+NeoBundle 'altercation/vim-colors-solarized' 		" solarized
 
-" Add or remove your Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'scrooloose/nerdtree'			" file browser
-NeoBundle 'bling/vim-airline'			" airline
-NeoBundle 'altercation/vim-colors-solarized' 	" solarized
 
-"
+
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-"End NeoBundle Scripts-------------------------
-
+call neobundle#end()					" required
+filetype plugin indent on				" required
+NeoBundleCheck						" required
+"-------------------------------------------------------------------------
 set laststatus=2
 filetype plugin indent on
 set background=dark
