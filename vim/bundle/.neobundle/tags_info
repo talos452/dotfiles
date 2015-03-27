@@ -2,6 +2,9 @@ ctrlp.vim
 neobundle.vim
 neosnippet-snippets
 neosnippet.vim
+nerdtree
+vim-airline
+vim-colors-solarized
 vim-colorschemes
 vim-fugitive
 vimshell
