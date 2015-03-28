@@ -31,8 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games"
+export PATH="/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
