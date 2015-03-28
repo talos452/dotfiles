@@ -9,11 +9,11 @@ call neobundle#begin(expand('/home/jkl/.vim/bundle'))	" required
 NeoBundleFetch 'Shougo/neobundle.vim'			" required
 
 " BUNDLES
-NeoBundle 'Shougo/neosnippet.vim'			" this stuff
-NeoBundle 'Shougo/neosnippet-snippets'			" came with
-NeoBundle 'tpope/vim-fugitive'				" neobundle
-NeoBundle 'ctrlpvim/ctrlp.vim'				" what does
-NeoBundle 'flazz/vim-colorschemes'			" it all do? 
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
 
 NeoBundle 'scrooloose/nerdtree'				" file browser
 NeoBundle 'bling/vim-airline'				" airline
