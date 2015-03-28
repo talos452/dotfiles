@@ -6,26 +6,39 @@
 DOT_DIR=~/tmp/.dotfiles
 VIM_DIR=~/tmp/.vim/bundle
 BASEDIR=~/tmp/
+DEBUGME=0
+DRY_RUN=0
+VERBOSE=0
 
-# check for git and that we don't already have a dot_dir or a vim_dir
+# WHAT DOES MARCELLUS WALLACE LOOK LIKE? 
+while getopts nv: opty
+ do
+  case $opty in
+   d) DEBUGME=1;;
+   n) DRY_RUN=1;;
+   v) VERBOSE=1;;
+   ?) printf "usage: %s: [-dnv] $0"
+       exit 76;; # i think this is right but i need to check sysexits.h
+ esac
+done
+# WHAT? 
 if type git; then : 
  else echo "error: where's git?"; exit 1; 
 fi
-# WHAT DOES MARCELLUS WALLACE LOOK LIKE? 
 if [ -d $DOT_DIR ]; then echo "error: $DOT_DIR exists"; exit 1; fi
+# WHAT COUNTRY YOU FROM? 
 if [ -d $VIM_DIR ]; then echo "error: $VIM_DIR exists"; exit 1; fi
-# WHAT? 
 mkdir -p $DOT_DIR
 mkdir -p $VIM_DIR
 git clone https://github.com/docjkl/dotfiles.git $DOT_DIR
-# WHAT COUNTRY YOU FROM? 
 git clone https://github.com/Shougo/neobundle.vim.git $VIM_DIR/neobundle.vim
 # wha-WHAT?
 
-if [ -f $BASEDIR/.vimrc -a ! -h $BASEDIR/.vimrc ]; then
- mv $BASEDIR/.vimrc $BASEDIR/.vimrc.old 
- ln -s $DOT_DIR/vimrc $BASEDIR .vimrc
-fi
+# test opty option vars against -n for 'nonzero size' 
+#if [ -f $BASEDIR/.vimrc -a ! -h $BASEDIR/.vimrc ]; then
+# mv $BASEDIR/.vimrc $BASEDIR/.vimrc.old 
+# ln -s $DOT_DIR/vimrc $BASEDIR .vimrc
+#fi
 
 
 
