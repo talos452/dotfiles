@@ -2,12 +2,12 @@
 URxvt*buffered: true
 URxvt*cursorBlink: true
 URxvt*underlineColor: blue
-!URxvt*font:  xft:inconsolata:size=9:antialias=true
 URxvt*font:            xft:Monaco for Powerline:regular:size=9
 URxvt*imFont:          xft:Monaco for Powerline:regular:size=9
 URxvt*boldFont:        xft:Monaco for Powerline:bold:size=9
 URxvt*italicFont:      xft:Monaco for Powerline:italic:size=9
 URxvt*boldItalicFont:  xft:Monaco for Powerline:bold:italic:size=9
+URxvt*letterSpace: -1.5 
 URxvt*depth: 32
 URxvt*borderless: 1
 URxvt*scrollBar: false
