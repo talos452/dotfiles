@@ -17,8 +17,6 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'altercation/vim-colors-solarized' 
 
-
-
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 call neobundle#end()
 filetype plugin indent on
@@ -31,4 +29,4 @@ colorscheme solarized
 set t_Co=256
 syntax on
 let g:airline_theme='solarized'	
-let g:airline_powerline_fonts = 0 
+let g:airline_powerline_fonts = 1
