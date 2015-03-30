@@ -1,4 +1,3 @@
-
 channels = ( );
 
 aliases = {
@@ -199,13 +198,6 @@ statusbar = {
       items = {
         barstart = { priority = "100"; };
         awl_5 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
-    awl_6 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_6 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };
