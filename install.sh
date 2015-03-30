@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# DONT RUN THIS YET IT ISN'T FINISHED
+
 # i started writing this in sh then in perl now in sh again because
 # it's been a shitton of months since i wrote any long shell scripts
 
