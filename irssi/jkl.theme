@@ -236,12 +236,12 @@ abstracts = {
   #   the content parts of the adv_windowlist.  Default seems to be blue
   # NOTE: if not set, the default background seems to be %w%4 = white on blue
   # %4 = blue
-  sb_background = "%k%4";
+  sb_background = "%c%0";
 
   # default backround for "default" statusbar group
   # NOTE: this impacts the statusbar of an inactive window and the edges of adv_windowlist
   # %7 = white (wich looks gray on a regular terminal with white bg)
-  sb_default_bg = "%k%8";
+  sb_default_bg = "%0";
 
   # background for topicbar at the top (defaults to sb_default_bg)
   sb_topic_bg = "%W%0";
@@ -249,7 +249,7 @@ abstracts = {
   # background for the statusbar of active window. You can also give
   # the foreground color.
   # %2 = green
-  sb_window_bg = "%k%3";
+  sb_window_bg = "%3%k";
   #leave at 3
 
   # background for prompt / input line
@@ -269,10 +269,10 @@ abstracts = {
   topicsbstart = "{sbstart $*}";
   topicsbend = "{sbend $*}";
 
-  prompt = "$c$*%n> ";
+  prompt = "%y$c$*%> ";
 
   # This controls each part of a statusbor, including the outer brackets of adv_windowlist
-  sb = " $* %M|%n";
+  sb = " $* %n";
   # The mode is next to your NICK and the channel
   # %Y = brightyellow (Solarized: base00, i.e. 2nd darkest gray)
   sbmode = "%b(%n+$*%b)%n";
@@ -285,15 +285,15 @@ abstracts = {
 
   # ',' separator between the window numbers
   # %g = green (same color as the active statusbar so we dont' see it)
-  sb_act_sep = "%n$*";
+  sb_act_sep = "%w$*";
   # normal text
   # This also affects the color of the window with activity in adv_windowlist
-  sb_act_text = "%3$*";
+  sb_act_text = "%y$*";
   # public message (ordinary messages)
-  sb_act_msg = "%2$*";
+  sb_act_msg = "%g$*";
   # hilight (when people actually chat)
   # This also affects the color of the window with direct message in adv_windowlist
-  sb_act_hilight = "%5$*";
+  sb_act_hilight = "%m$*";
   # hilight with specified color, $0 = color, $1 = text
   sb_act_hilight_color = "$0$1-%n";
 
