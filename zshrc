@@ -2,7 +2,7 @@
 export ZSH=/home/jkl/.oh-my-zsh
 export UPDATE_ZSH_DAYS=30
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="false"
