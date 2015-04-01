@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# THIS FILE ISN'T DONE YET EITHER DON'T RUN IT
-
 # xup.sh - do xrdb stuff
 # i will not write this in perl when sh will do nicely (as much as i want to)
 # we're assuming that the dotfiles were correctly installed or were done manually
