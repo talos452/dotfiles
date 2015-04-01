@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# turns capslock into control, like it should be
+
 if type setxkbmap >/dev/null 2>&1; then 
  setxkbmap -layout us -option ctrl:nocaps 2>/dev/null
 fi 
