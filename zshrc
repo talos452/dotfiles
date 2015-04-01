@@ -66,5 +66,4 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias statmk="make SHARED=0 CC='gcc -static'"
-alias xres="xrdb -merge ~/.Xresources"
-alias xmk=xres
+alias xup="sh ~/.dotfiles/xup.sh"
