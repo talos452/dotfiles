@@ -6,6 +6,8 @@
 
 HOSTNAME=$(hostname)
 
+# TODO don't make $OVRD dependent on hostname, just symlink it to .xovrds in
+#      the installer
 OVRD="$HOME/.xovrds-$HOSTNAME"
 XRES="$HOME/.Xresources"
 XRDB=$(which xrdb)
